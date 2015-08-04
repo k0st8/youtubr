@@ -51,7 +51,7 @@ class Home extends CI_Controller {
 	private function isLogined()
 	{
 		$this->load->helper('url');
-		$users_dase = json_decode(file_get_contents(base_url() . '/data/data.json'));
+		$users_dase = json_decode(file_get_contents(base_url() . '/data/dummy-data.json'));
 		$users = $users_dase->users;
 		$postData = $this->input->post();
 		if (!empty($postData['user']) && !empty($postData['pass'])){
