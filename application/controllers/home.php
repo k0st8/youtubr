@@ -64,4 +64,8 @@ class Home extends CI_Controller {
 		}
 		return false;
 	}
+	public function getVersion()
+	{
+		echo CI_VERSION;
+	}
 }
